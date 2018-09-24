@@ -1,0 +1,63 @@
+{
+	"variables": [],
+	"info": {
+		"name": "tiny-NoSQL-Database",
+		"_postman_id": "ac67cbff-50ac-b6bd-d741-8fa182409817",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "putDataInto-noSQL2",
+			"request": {
+				"url": "http://localhost:8080/putmydata/96f55c7d8f42/",
+				
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"type\": \"CUSTOMER\", \"verb\": \"NEW\", \"key\": \"96f55c7d8f42\", \"event_time\": \"2017-01-06T12:46:46.384Z\", \"last_name\": \"Smith\", \"adr_city\": \"Middletown\", \"adr_state\": \"AK\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "putDataInto-noSQL3",
+			"request": {
+				"url": "http://localhost:8080/putmydata/96f55c7d8f43/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"type\": \"CUSTOMER\", \"verb\": \"NEW\", \"key\": \"96f55c7d8f43\", \"event_time\": \"2017-01-06T12:46:46.384Z\", \"last_name\": \"Smith3\", \"adr_city\": \"Middletown\", \"adr_state\": \"AK\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getDataFrom-noSQL",
+			"request": {
+				"url": "http://localhost:8080/getmydata/96f55c7d8f42/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
